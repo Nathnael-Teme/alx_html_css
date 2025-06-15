@@ -1,0 +1,393 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: white;
+  background-color: #1f1f1f;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+header {
+  background: url('./images/Object.png') no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  padding: 20px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.logo {
+  height: 30px;
+}
+
+nav a {
+  margin-left: 30px;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.hero {
+  background: url("images/background.png") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0);
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.hero-subtext {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.register-btn {
+  padding: 10px 25px;
+  border-radius: 25px;
+  background-color: #C271FF;
+  color: white;
+  border: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.pros {
+ 
+  text-align: center;
+  padding: 60px 30px;
+}
+
+.pros h2 {
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+}
+
+.highlight {
+  color: #C271FF;
+}
+
+.pros-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.pro-card {
+  text-align: center;
+  max-width: 150px;
+}
+
+.pro-card img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.pro-card h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.pro-card p {
+  font-size: 0.8rem;
+  color: #B0B0B0;
+  line-height: 1.4;
+}
+.quote-section {
+  background-color: #C271FF;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.quote-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.quote-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+}
+
+.quote-text blockquote {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.quote-text footer {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.quote-text strong {
+  font-size: 20px;
+  display: block;
+  margin-top: 10px;
+}
+
+.quote-text span {
+  font-size: 16px;
+  opacity: 0.8;
+}
+.video-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #fff;
+  color: #071629;
+}
+
+.video-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.video-section .highlight {
+  color: #C271FF;
+}
+
+.video-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.video-card {
+  width: 250px;
+  text-align: left;
+}
+
+.video-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.video-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 10px;
+  color: #071629;
+}
+
+.video-card p {
+  font-size: 0.9rem;
+  color: #6B7280;
+  margin: 5px 0;
+}
+
+.video-author {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.video-author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.stars {
+  color: #C271FF;
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+
+.duration {
+  font-size: 0.8rem;
+  color: #6B7280;
+  margin-top: 5px;
+}
+.membership-section {
+  padding: 80px 20px;
+  background-color: #071629;
+  text-align: center;
+  color: white;
+}
+
+.membership-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.membership-section .highlight {
+  color: #C271FF;
+}
+
+.membership-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.feature {
+  width: 200px;
+}
+
+.feature img {
+  width: 45px;
+  height: 45px;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 0.9rem;
+  color: #D9D9D9;
+}
+
+.register-btn {
+  background-color: #C271FF;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.faq-section {
+  background-color: white;
+  padding: 100px 20px;
+  text-align: center;
+  color: #071629;
+}
+
+.faq-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+
+.faq-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  width: 400px;
+  text-align: left;
+}
+
+.faq-item h3 {
+  font-size: 1.3rem;
+  color: #071629;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.faq-item p {
+  font-size: 1rem;
+  color: #7D7D7D;
+  line-height: 1.6;
+}
+.footer {
+  background-color: #071629;
+  color: white;
+  padding: 60px 20px 30px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  width: 160px;
+  height: auto;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #FF6565;
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #CCCCCC;
+}
+.facebook1,
+.twitter1,
+.instagram1 {
+  width: 40px;     /* Replace with actual Figma width */
+  height: 40px;    /* Replace with actual Figma height */
+  object-fit: contain; /* Keeps the aspect ratio */
+}
